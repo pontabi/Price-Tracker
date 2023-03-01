@@ -14,7 +14,7 @@ class GoogleSheet:
         client = gspread.authorize(creds)
 
         # --------- Fetch the sheet --------- #
-        sheet = client.open('Price Tracker Target Data').sheet1
+        sheet = client.open('Your Sheet Name').sheet1
         python_sheet = sheet.get_all_records()
         self.records = python_sheet
 
